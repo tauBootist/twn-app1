@@ -1,0 +1,120 @@
+import { COMMA, ENTER } from '@angular/cdk/keycodes';
+import { NgModule } from '@angular/core';
+import 'hammerjs';
+
+import { CdkTableModule } from '@angular/cdk/table';
+import { CdkTreeModule } from '@angular/cdk/tree';
+import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  MAT_CHIPS_DEFAULT_OPTIONS,
+  MatAutocompleteModule,
+  MatBadgeModule,
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatDividerModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatSortModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule,
+} from '@angular/material';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { RouterModule } from '@angular/router';
+import { OverlayModule } from '@angular/cdk/overlay';
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,
+    CdkTableModule,
+    CdkTreeModule,
+    FlexLayoutModule,
+    FormsModule,
+    MatAutocompleteModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatMomentDateModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatSidenavModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatTooltipModule,
+    ReactiveFormsModule,
+    RouterModule,
+    OverlayModule,
+  ],
+  exports: [
+    CdkTableModule,
+    CdkTreeModule,
+    FlexLayoutModule,
+    FormsModule,
+    MatAutocompleteModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatMomentDateModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatSidenavModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatTooltipModule,
+    ReactiveFormsModule,
+    OverlayModule,
+  ],
+  providers: [
+    {
+      provide: MAT_CHIPS_DEFAULT_OPTIONS,
+      useValue: {
+        separatorKeyCodes: [ENTER, COMMA],
+      },
+    },
+  ],
+})
+export class SharedModule {}
